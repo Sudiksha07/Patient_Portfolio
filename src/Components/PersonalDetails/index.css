@@ -1,101 +1,93 @@
-/* Apply Manrope font globally */
-body {
-    font-family: 'Manrope', sans-serif;
-  }
+/* Main Outer Div */
+.outer-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 330px; /* Adjust container width */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image and Name Section */
+.image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Data-image {
+  width: 120px; /* Profile image size */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.Data-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Details Box */
+.details-box {
+  width: 100%; /* Full width of the container */
+  padding: 5px;
   
-  /* Outer container */
-  .outer-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 740px;
-    width: 367px;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
-  }
+  border-radius: 8px;
   
-  /* Patient card styling */
-  .patient-card {
-    width: 100%;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  /* Image container */
-  .image-container {
-    position: relative;
-    margin-bottom: 24px;
-    text-align: center;
-  }
-  
-  /* Patient image styling */
-  .patient-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  /* Patient name styling */
-  .patient-name {
-    font-size: 24px;
-    font-weight: 600; /* Semi-bold */
-    margin-top: 16px;
-  }
-  
-  /* Patient details section */
-  .patient-details {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0;
-  }
-  
-  /* Detail item container */
-  .detail-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 24px;
-  }
-  
-  /* Icon container */
-  .icon-container {
-    width: 45px;
-    height: 45px;
-    margin-right: 16px;
-  }
-  
-  /* Icon styling */
-  .icon {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  /* Text container for heading and response */
-  .detail-text {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Heading styling (normal, not bold) */
-  .heading {
-    font-size: 14px;
-    font-weight: normal;  /* Ensure heading is not bold */
-    color: #333;
-  }
-  
-  /* Response styling with ExtraBold */
-  .response {
-    font-size: 14px;
-    font-weight: 800; /* ExtraBold */
-    color: #232323;
-  }
-  
+}
+
+/* Individual Detail Item */
+.detail-item {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  margin-bottom: 15px; /* Reduce spacing between items */
+}
+
+.icon {
+  width: 24px; /* Smaller icon size */
+  height: 24px;
+  margin-right: 8px; /* Minimal space between icon and text */
+}
+
+/* Text Details */
+.detail-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Remove vertical gap between heading and response */
+}
+
+.heading {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 2px; /* Minimal spacing below heading */
+}
+
+.response {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin: 0; /* Remove extra margin for tight spacing */
+}
+.show-info-button {
+  width: 250px; /* Button width */
+  padding: 10px 15px; /* Padding for height and horizontal space */
+  margin-top: 5px; /* Space above the button */
+  border: 2px solid #a8dfb6; /* Light green border */
+  background-color: #a5cda5; /* White background for minimal look */
+  color: #101110; /* Green text color */
+  font-size: 14px; /* Text size */
+  font-weight: 600; /* Bold text */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center-align the text */
+  cursor: pointer; /* Pointer on hover */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.show-info-button:hover {
+  background-color: #a8dfb6; /* Light green on hover */
+  color: #ffffff; /* White text on hover */
+}

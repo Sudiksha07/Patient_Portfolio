@@ -2,18 +2,23 @@ body {
     font-family: 'Manrope', sans-serif;
   }
 .lab-results-container {
-    width: 367px;
-    height: 297px;
+    width: 330px;
+    margin-top: 5px;
     border: 1px solid #ddd; /* Optional: For border around the box */
-    padding: 16px;
+    padding: 20px;
+    padding-top: 0;
     overflow-y: scroll;
+    border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-  .heading {
+  .headinglab {
     font-family: 'Manrope', sans-serif;
     font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 16px;
+    font-size: 20px;
+    
+    margin-bottom: 3px;
+    
   }
   
   .lab-results-list {
@@ -24,17 +29,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
-    margin-bottom: 15px;
-    background-color: #f4f4f4; /* Optional: Light background for the list items */
+    padding: 5px;
+    margin-bottom: 5px;
+    /* background-color: #f4f4f4; Optional: Light background for the list items */
     border-radius: 8px;
+    font-weight: 400;
   }
   
   .result-name {
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
     font-weight: normal;
-    color: #333;
+    color: #0b0a0a;
   }
   
   .download-icon {

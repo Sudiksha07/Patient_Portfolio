@@ -137,8 +137,8 @@ const Graph = () => {
     <div
     style={{
       width: "100%",
-      height:'50vh',
-      margin: "0 auto",
+    //   height:'50vh',
+      margin: "5 auto",
       backgroundColor: "#F4F0FE",
       borderRadius: "24px",
     }}

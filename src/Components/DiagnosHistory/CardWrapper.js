@@ -38,7 +38,7 @@ export default function CardWrapper() {
   }, [selectedIndex, diagnosticData]); // Dependencies: selectedIndex and diagnosticData
 
   return (
-    <div  style={{display:"flex",alignContent:"space-between",margin:"15px "}}>
+    <div  style={{display:"flex",justifyContent:"space-between",gap:"100px",margin:"15px "}}>
          <Card
         cardname="Respiratory Rate"
         background="#E0F3FA"

@@ -17,7 +17,7 @@ const LabResults = () => {
 
   return (
     <div className="lab-results-container">
-      <h2 className="heading">Lab Results</h2>
+      <p className="headinglab">Lab Results</p>
       <div className="lab-results-list">
         {labResults.length > 0 ? (
           labResults.map((result, index) => (

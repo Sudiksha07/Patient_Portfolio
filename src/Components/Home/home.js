@@ -13,7 +13,9 @@ const HomePage = () => {
     <div className="container">
       
       <div className="left-column">
-        <div className="left-top"><Graph/></div>
+        <div className="left-top">
+          <h2>Diagnosis History
+            </h2><Graph/></div>
         <div className="left-middle">
       <CardWrapper/></div>
         <div className="left-bottom">
